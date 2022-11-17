@@ -8,7 +8,7 @@ const Comments = ({ postId, comments: initialComments }) => {
   const handleSubmitComment = () => {
     console.log(newComment);
     axios
-      .post(`http://localhost:3002/post/${postId }/comment`, null, {
+      .post(`http://localhost:3002/post/${postId}/comment`, null, {
         params: { newComment },
       })
       .then(() => {
